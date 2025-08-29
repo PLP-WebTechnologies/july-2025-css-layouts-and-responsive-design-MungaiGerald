@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography & Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f9;
+}
+
+/* Navigation (Flexbox) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1c1c1e;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section (Flexbox) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: #dcdde1;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Grid Section */
+.grid-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    border: 2px solid #1c1c1e;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1c1c1e;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* 📱 Responsive (Media Queries) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
